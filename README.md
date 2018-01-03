@@ -20,6 +20,7 @@ public class BufMgr {
    * @param numbufs number of buffers in the buffer pool.
    * @param replacerArg name of the buffer replacement policy.
    */
+
   public BufMgr(int numbufs, String replacerArg) {};
 
   /** 
@@ -39,6 +40,7 @@ public class BufMgr {
    * @param page the pointer poit to the page.
    * @param emptyPage true (empty page); false (non-empty page)
    */
+
   public void pinPage(PageId pin_pgid, Page page, boolean emptyPage) {};
 
    /**
@@ -53,6 +55,7 @@ public class BufMgr {
    * @param globalPageId_in_a_DB page number in the minibase.
    * @param dirty the dirty bit of the frame
    */
+
   public void unpinPage(PageId PageId_in_a_DB, boolean dirty) {};
 
   /** 
@@ -69,6 +72,7 @@ public class BufMgr {
    *
    * @return the first page id of the new pages.  null, if error.
    */
+
   public PageId newPage(Page firstpage, int howmany) {};
 
   /**
@@ -78,6 +82,7 @@ public class BufMgr {
    *
    * @param globalPageId the page number in the data base.
    */
+
   public void freePage(PageId globalPageId) {};
 
   /**
@@ -86,6 +91,7 @@ public class BufMgr {
    *
    * @param pageid the page number in the database.
    */
+
   public void flushPage(PageId pageid) {};
 
 };
