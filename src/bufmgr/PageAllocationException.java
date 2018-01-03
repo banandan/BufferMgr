@@ -1,10 +1,11 @@
 package bufmgr;
+
 import chainexception.*;
 
-public class PageAllocationException extends ChainException{
+public class PageAllocationException extends ChainException {
 
-  public PageAllocationException(Exception e, String name){
-	  super(e, name);
-  }
- 
+	public PageAllocationException(Exception e, String name) {
+		super(e, name);
+	}
+
 }
