@@ -96,6 +96,10 @@ public class BufMgr {
 
 };
 
+Dependencies:
+----------
+./lib/bufmgrAssign.jar
+
 Test:
 -----
-./test
+./src/tests/BMTest.java
