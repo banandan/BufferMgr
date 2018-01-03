@@ -95,3 +95,7 @@ public class BufMgr {
   public void flushPage(PageId pageid) {};
 
 };
+
+Test:
+-----
+./test
